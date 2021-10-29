@@ -4,7 +4,8 @@ import Login from './components/Login/Login'
 import Home from './components/Home/Home'
 import Register from './components/Register/Register'
 import Navbar from './components/Navbar/Navbar'
-import Listar from './components/Listar/Listar'
+import Users from './components/Users/Listar'
+import addUser from './components/Users/addUser'
 
 const Routes = () => {
     return(
@@ -14,7 +15,8 @@ const Routes = () => {
                 <Route path="/home" component={Home} />
                 <Route path="/login" component={Login} />
                 <Route path="/register" component={Register} />   
-                <Route path="/users" component={Listar} />                      
+                <Route path="/users" component={Users} />
+                <Route path="/adduser" component={addUser} />
                 <Route exact path="/">
                     <Redirect to="/home" />
                 </Route>

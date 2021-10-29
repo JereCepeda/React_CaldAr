@@ -18,7 +18,7 @@ const Listar = () => {
     }
     
     return (
-        <div>
+        <div className="container">
             <table>
                 <thead>
                     <tr>
